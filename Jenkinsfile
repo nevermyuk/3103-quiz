@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git branch:'main', url:'https://github.com/nevermyuk/3103-quiz.git'
+                git branch:'main', url:'https://github.com/nevermyuk/3103-quiz-webapp.git'
             }
         }
 
@@ -21,7 +21,7 @@ pipeline {
                 script {
                     def scannerHome = tool 'SonarQube'
                     withSonarQubeEnv('SonarQube') {
-                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWASP -Dsonar.sources=."
+                        sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=OWASP -Dsonar.sources=.  -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqp_0ab068194669b8ca38b7782c3e5cc45c3daf2bd2"
                     }
                 }
             }

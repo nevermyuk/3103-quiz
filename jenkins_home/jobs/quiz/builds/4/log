@@ -1,0 +1,23 @@
+Started by user unknown or anonymous
+Lightweight checkout support not available, falling back to full checkout.
+Checking out git https://github.com/nevermyuk/3103-quiz.git into /var/jenkins_home/workspace/quiz@script/fd58b3000677e732f481b354bb727a5c8b8801d85bef82a51be90447ff308b86 to read https://github.com/nevermyuk/3103-quiz.git
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/quiz@script/fd58b3000677e732f481b354bb727a5c8b8801d85bef82a51be90447ff308b86/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nevermyuk/3103-quiz.git # timeout=10
+Fetching upstream changes from https://github.com/nevermyuk/3103-quiz.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/nevermyuk/3103-quiz.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 09a062c8c04f858f3d10aa6f8de7f3f4f1b79f42 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 09a062c8c04f858f3d10aa6f8de7f3f4f1b79f42 # timeout=10
+Commit message: "add git"
+First time build. Skipping changelog.
+ERROR: /var/jenkins_home/workspace/quiz@script/fd58b3000677e732f481b354bb727a5c8b8801d85bef82a51be90447ff308b86/https:/github.com/nevermyuk/3103-quiz.git not found
+Finished: FAILURE
