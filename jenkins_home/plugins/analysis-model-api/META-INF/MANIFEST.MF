@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Analysis Model API Plugin
+Specification-Version: 10.20
+Implementation-Title: Analysis Model API Plugin
+Implementation-Version: 10.20.0
+Group-Id: io.jenkins.plugins
+Short-Name: analysis-model-api
+Long-Name: Analysis Model API Plugin
+Url: https://github.com/jenkinsci/analysis-model
+Plugin-Version: 10.20.0
+Hudson-Version: 2.346.3
+Jenkins-Version: 2.346.3
+Plugin-Dependencies: jaxb:2.3.6-1,plugin-util-api:2.17.0,apache-httpcomp
+ onents-client-4-api:4.5.13-138.v4e7d9a_7b_a_e61
+Plugin-Developers: Ullrich Hafner:uhafner:ullrich.hafner@gmail.com
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT license
+Plugin-ScmUrl: https://github.com/jenkinsci/analysis-model-api-plugin
+

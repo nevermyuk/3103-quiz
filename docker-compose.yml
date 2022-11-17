@@ -16,7 +16,16 @@ services:
     container_name: webapp
     build: ./webapp
     ports:
-      - "80:80"
+      - "80:3000"
+
+  sonarqube:
+    container_name: sonarqube
+    build:
+      dockerfile: sonarqube.Dockerfile
+    environment:
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: true
+    ports:
+      - 9000:9000
 
 volumes:
   jenkins_data:
